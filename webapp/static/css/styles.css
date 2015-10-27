@@ -12,6 +12,11 @@
   padding: 0 1.25rem;
 }
 
+body {
+  background: url(../images/backgrounds/bg-papertexture.jpg);
+  font-size: 1.25rem;
+}
+
 .main-container {
   position: relative;
   max-width: 88.75rem;

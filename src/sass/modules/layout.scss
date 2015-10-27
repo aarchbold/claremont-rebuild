@@ -2,6 +2,11 @@ body {
 	// background-color: black;
 }
 
+body {
+    background: url(../images/backgrounds/bg-papertexture.jpg);
+    font-size: rem(20px)
+}
+
 .main-container {
 	position: relative;
 	max-width: rem(1420px);
