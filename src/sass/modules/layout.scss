@@ -3,16 +3,34 @@ body {
 }
 
 body {
+    background-color: #f3e9d9;
+    font-size: rem(20px);
+    margin: 0
+}
+
+#site-header {
+    background: url(../images/backgrounds/bg-header.png);
+    height: rem(140px);
+}
+
+#access {
+    height: 46px;
+    border-bottom: 1px solid #bebab7;
+    width: 1100px;
+    margin: auto;
+}
+
+.wrap-container {
+    width: 100%
+}
+
+.wrap-container__nav {
     background: url(../images/backgrounds/bg-papertexture.jpg);
-    font-size: rem(20px)
 }
 
 .main-container {
-	position: relative;
-	max-width: rem(1420px);
-	margin: 0 auto;
-	padding: 0 rem(20px);
+    width: 1100px;
+    margin: auto;
 }
-	
 
 

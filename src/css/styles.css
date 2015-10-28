@@ -13,13 +13,32 @@
 }
 
 body {
-  background: url(../images/backgrounds/bg-papertexture.jpg);
+  background-color: #f3e9d9;
   font-size: 1.25rem;
+  margin: 0;
+}
+
+#site-header {
+  background: url(../images/backgrounds/bg-header.png);
+  height: 8.75rem;
+}
+
+#access {
+  height: 46px;
+  border-bottom: 1px solid #bebab7;
+  width: 1100px;
+  margin: auto;
+}
+
+.wrap-container {
+  width: 100%;
+}
+
+.wrap-container__nav {
+  background: url(../images/backgrounds/bg-papertexture.jpg);
 }
 
 .main-container {
-  position: relative;
-  max-width: 88.75rem;
-  margin: 0 auto;
-  padding: 0 1.25rem;
+  width: 1100px;
+  margin: auto;
 }
