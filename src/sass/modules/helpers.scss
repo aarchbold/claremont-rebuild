@@ -9,3 +9,8 @@
 // Mixins
 
 // Just regular re-usable css
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
