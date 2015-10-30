@@ -14,3 +14,27 @@
   display: table;
   clear: both;
 }
+
+.anchor-default {
+    color: $anchor-default;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.anchor-accent {
+    color: $anchor-accent;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.anchor-muted {
+    color: $color-heading;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}

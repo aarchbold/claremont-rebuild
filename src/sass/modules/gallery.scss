@@ -1,13 +1,4 @@
-body {
-	// background-color: black;
-}
-
-.gallery-container {
-	position: relative;
-	max-width: rem(1420px);
-	margin: 0 auto;
-	padding: 0 rem(20px);
-}
+// Gallery page specific styles
 
 .sidebar-search, .sidebar-gallery-links {
     width: rem(200px);
@@ -22,6 +13,47 @@ body {
 
 .gallery-stage__image img {
     width: 100%;
+}
+
+.gallery-details__info {
+    position: relative;
+    width: rem(580px);
+    margin: rem(10px) auto rem(20px);
+    text-align: center;
+}
+
+.gallery-details__info-hdr {
+    color: $color-heading;
+    font-size: rem(28px);
+    margin: 0 0 rem(8px) 0;
+    span {
+        font-size: rem(18px);
+    }
+}
+
+.gallery-details__controls {
+    position: absolute;
+    background: url(../images/sprites/sprite-gallery.png) 0 0 no-repeat;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: rem(24px);
+    height: rem(34px);
+    text-indent: -9999px;
+    &.-left {
+        left: rem(-84px);
+        background-position: 0 -68px;
+        &:hover {
+            background-position: 0 -102px;
+        }
+    }
+    &.-right {
+        right: rem(-84px);
+        background-position: 0 0;
+        &:hover {
+            background-position: 0 -34px;
+        }
+    }
 }
 
 

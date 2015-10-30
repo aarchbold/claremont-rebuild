@@ -4,6 +4,30 @@
   clear: both;
 }
 
+.anchor-default {
+  color: #b08254;
+  text-decoration: none;
+}
+.anchor-default:hover {
+  text-decoration: underline;
+}
+
+.anchor-accent {
+  color: #8f332c;
+  text-decoration: none;
+}
+.anchor-accent:hover {
+  text-decoration: underline;
+}
+
+.anchor-muted {
+  color: #3c656f;
+  text-decoration: none;
+}
+.anchor-muted:hover {
+  text-decoration: underline;
+}
+
 @font-face {
   font-family: 'FuturaBold';
   src: url("../fonts/fub_____-webfont.eot");
@@ -27,13 +51,6 @@
   text-indent: -99999px;
 }
 
-.gallery-container {
-  position: relative;
-  max-width: 88.75rem;
-  margin: 0 auto;
-  padding: 0 1.25rem;
-}
-
 .sidebar-search, .sidebar-gallery-links {
   width: 12.5rem;
   float: left;
@@ -47,6 +64,47 @@
 
 .gallery-stage__image img {
   width: 100%;
+}
+
+.gallery-details__info {
+  position: relative;
+  width: 36.25rem;
+  margin: 0.625rem auto 1.25rem;
+  text-align: center;
+}
+
+.gallery-details__info-hdr {
+  color: #3c656f;
+  font-size: 1.75rem;
+  margin: 0 0 0.5rem 0;
+}
+.gallery-details__info-hdr span {
+  font-size: 1.125rem;
+}
+
+.gallery-details__controls {
+  position: absolute;
+  background: url(../images/sprites/sprite-gallery.png) 0 0 no-repeat;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+  width: 1.5rem;
+  height: 2.125rem;
+  text-indent: -9999px;
+}
+.gallery-details__controls.-left {
+  left: -5.25rem;
+  background-position: 0 -68px;
+}
+.gallery-details__controls.-left:hover {
+  background-position: 0 -102px;
+}
+.gallery-details__controls.-right {
+  right: -5.25rem;
+  background-position: 0 0;
+}
+.gallery-details__controls.-right:hover {
+  background-position: 0 -34px;
 }
 
 .gallery-container {
@@ -65,6 +123,11 @@ body {
 
 img {
   border: 0;
+}
+
+h1, h2, h3, h4, p {
+  margin: 0;
+  padding: 0;
 }
 
 #site-header {
@@ -90,4 +153,23 @@ img {
 .main-container {
   width: 1100px;
   margin: auto;
+}
+
+.main-breadcrumb {
+  padding: 1rem 0;
+  color: #b3864c;
+}
+.main-breadcrumb a {
+  text-decoration: none;
+  color: #b3864c;
+}
+.main-breadcrumb a:hover {
+  text-decoration: underline;
+}
+.main-breadcrumb .main-breadcrumb__current {
+  color: #a43929;
+}
+
+.sidebar-search__options select {
+  width: 100%;
 }
