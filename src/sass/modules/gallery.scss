@@ -8,6 +8,20 @@ body {
 	margin: 0 auto;
 	padding: 0 rem(20px);
 }
-	
+
+.sidebar-search, .sidebar-gallery-links {
+    width: rem(200px);
+    float: left;
+}
+
+.gallery-stage {
+    width: rem(580px);
+    float: left;
+    margin: 0 rem(60px);
+}
+
+.gallery-stage__image img {
+    width: 100%;
+}
 
 
