@@ -1,11 +1,63 @@
 // main buttons
+%btn {
+    -webkit-appearance: none;
+    transition: opacity 0.125s, border-color 0.125s, background-color 0.125s, color 0.125s;
+    display: inline-block;
+    position: relative;
+    border: solid 1px #595959;
+    border-radius: 3px;
+    padding: rem(6px) rem(12px);
+    background-color: #8f332c;
+    font-size: rem(16px);
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.25;
+    cursor: pointer;
+    color: white;
+    &:active {
+        top: 2px;
+    }
+    &:focus {
+        outline: 0;
+    }
+    &:hover {
+        background-color: #b27570;
+        border-color: #8f332c;
+    }
+    &[disabled] {
+        opacity: 0.45;
+    }
+}
+
+.btn-primary {
+    @extend %btn;
+}
+
+.btn-secondary {
+    @extend %btn;
+    background-color: #3c656f;
+    &:hover {
+        background-color: #73a4b0;
+    }
+}
+
+.btn-small {
+    padding: rem(4px) rem(8px);
+    font-size: rem(14px);
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+}
 
 // social chicklets
 .btn-share {
-    width: rem(60px);
-    height: rem(60px);
+    width: rem(30px);
+    height: rem(30px);
     display: inline-block;
-    margin: 0 rem(10px);
+    margin: 0 rem(5px);
     background-color: grey;
     text-indent: -99999px
 }

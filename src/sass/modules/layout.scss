@@ -1,3 +1,6 @@
+// main layout styles
+
+// resets and existing styles
 body {
 	// background-color: black;
 }
@@ -5,7 +8,7 @@ body {
 body {
     font-family: 'FuturaMedium';
     background-color: $claremont-bg;
-    font-size: rem(13px);
+    font-size: rem(14px);
     margin: 0
 }
 
@@ -34,6 +37,7 @@ h1, h2, h3, h4, p {
     width: 100%
 }
 
+// new gallery containers
 .wrap-container__nav {
     background: url(../images/backgrounds/bg-papertexture.jpg);
 }
@@ -45,10 +49,10 @@ h1, h2, h3, h4, p {
 
 .main-breadcrumb {
     padding: rem(16px) 0;
-    color: $breadcrumb-color;
+    color: $color-breadcrumb;
     a {
         text-decoration: none;
-        color: $breadcrumb-color;
+        color: $color-breadcrumb;
         &:hover {
             text-decoration: underline;
         }
@@ -59,10 +63,33 @@ h1, h2, h3, h4, p {
 }
 
 // sidebar search
+.sidebar-search {
+    width: rem(200px);
+    float: left;
+}
+
+.sidebar-search__hdr {
+    text-transform: uppercase;
+    font-size: rem(18px);
+    color: $color-heading;
+    margin-bottom: rem(12px);   
+}
+
+.sidebar-search__options {
+    margin: rem(12px) 0 rem(6px) 0;
+    select {
+        margin-bottom: rem(12px);
+    }
+}
+
 .sidebar-search__options {
     select {
         width: 100%;
     }
+}
+
+.sidebar-search__instructions {
+    margin-top: rem(35px);
 }
 
 

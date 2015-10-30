@@ -1,6 +1,6 @@
 // Gallery page specific styles
 
-.sidebar-search, .sidebar-gallery-links {
+.sidebar-gallery-links {
     width: rem(200px);
     float: left;
 }
@@ -54,6 +54,20 @@
             background-position: 0 -34px;
         }
     }
+}
+
+.gallery-stage__detail {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.gallery-description {
+    text-align: center;
+    border-top: 2px solid $color-hr;
+    border-bottom: 2px solid $color-hr;
+    padding: rem(12px) 0;
+    margin: rem(28px) 0;
 }
 
 
