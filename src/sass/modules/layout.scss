@@ -1,15 +1,13 @@
 // main layout styles
 
 // resets and existing styles
-body {
-	// background-color: black;
-}
 
 body {
     font-family: 'FuturaMedium';
     background-color: $claremont-bg;
     font-size: rem(14px);
-    margin: 0
+    margin: 0;
+    color: $color-default-font;
 }
 
 img {
@@ -68,28 +66,63 @@ h1, h2, h3, h4, p {
     float: left;
 }
 
+.sidebar-search-refine {
+    padding-bottom: rem(20px);
+    margin-bottom: rem(20px);
+    border-bottom: 1px solid $color-hr;
+}
+
+.sidebar-search__input {
+    position: relative;
+    input {
+        display: block;
+        font-size: rem(15px);
+        width: rem(160px);
+        padding: rem(5px);
+    }
+    .sidebar-search__submit {
+        display: block;
+        position: absolute;
+        right: rem(-2px);
+        top: rem(5px);
+        width: rem(24px);
+        height: rem(24px);
+        text-indent: -9999px;
+        background: url(../images/sprites/sprite-gallery.png) 0 -501px no-repeat;
+    }
+}
+
 .sidebar-search__hdr {
     text-transform: uppercase;
     font-size: rem(18px);
     color: $color-heading;
-    margin-bottom: rem(12px);   
+    margin-bottom: rem(12px);
+    letter-spacing: $letter-spacing-default;
+    &.-refine {
+        color: $color-default-font;
+        font-size: rem(16px);
+        font-weight: bold;
+        text-transform: none;
+        letter-spacing: 1px;
+    }
 }
 
 .sidebar-search__options {
     margin: rem(12px) 0 rem(6px) 0;
     select {
-        margin-bottom: rem(12px);
-    }
-}
-
-.sidebar-search__options {
-    select {
         width: 100%;
+        margin-bottom: rem(12px);
+        font-size: rem(16px);
+        padding: rem(5px);
     }
 }
 
 .sidebar-search__instructions {
     margin-top: rem(35px);
+}
+
+.sidebar-search__controls {
+    text-align: right;
 }
 
 

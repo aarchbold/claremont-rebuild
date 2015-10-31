@@ -1,3 +1,9 @@
+// global functions
+@function rem($size) {
+    $remSize: $size / 16px;
+    @return #{$remSize}rem;
+}
+
 // global settings
 
 // pallete
@@ -7,5 +13,9 @@ $anchor-default: #b08254;
 $anchor-accent: #8f332c;
 $color-heading: #3c656f;
 $color-hr: #595959;
+$color-default-font: #595959;
 $color-breadcrumb: #b3864c;
+$letter-spacing-default: rem(2px);
+$background-grey: #9f9c9b;
+$color-heading-dark: #8c352d;
 

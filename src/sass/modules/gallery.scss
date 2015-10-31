@@ -1,5 +1,11 @@
 // Gallery page specific styles
 
+.gallery-container {
+    width: 100%;
+    border-top: 1px solid $color-hr;
+    padding-top: rem(20px);
+}
+
 .sidebar-gallery-links {
     width: rem(200px);
     float: left;
@@ -11,9 +17,25 @@
     list-style: none;
     border-bottom: 2px solid $color-hr;
     padding-bottom: rem(10px);
-    li {
+    li {}
+    a {
+        display: block;
+        font-size: rem(16px);
         padding: rem(15px) 0 rem(15px) rem(30px);
-        font-size: rem(15px);
+        font-weight: bold;
+        background: url(../images/sprites/sprite-gallery.png) 0 0 no-repeat;
+        &.bullet-description {
+            background-position: 0 -188px;
+        }
+        &.bullet-view-image {
+            background-position: 0 -246px;
+        }
+        &.bullet-add-wishlist {
+            background-position: 0 -305px;
+        }
+        &.bullet-inquire {
+            background-position: 0 -362px;
+        }
     }
 }
 
@@ -21,6 +43,10 @@
     width: rem(580px);
     float: left;
     margin: 0 rem(60px);
+}
+
+.gallery-stage__image {
+    margin-bottom: rem(15px);
 }
 
 .gallery-stage__image img {
@@ -34,10 +60,16 @@
     text-align: center;
 }
 
+.gallery-details__info-description {
+    font-size: rem(15px);
+    letter-spacing: $letter-spacing-default;
+}
+
 .gallery-details__info-hdr {
     color: $color-heading;
     font-size: rem(28px);
     margin: 0 0 rem(8px) 0;
+    letter-spacing: $letter-spacing-default;
     span {
         font-size: rem(18px);
     }
@@ -72,6 +104,8 @@
     float: left;
     width: 50%;
     text-align: center;
+    font-size: rem(16px);
+    font-weight: bold;
 }
 
 .gallery-description {
@@ -92,11 +126,28 @@
 .gallery-description__hdr {
     text-transform: uppercase;
     margin-bottom: rem(10px);
+    letter-spacing: $letter-spacing-default;
 }
 
 .gallery-description__share-text {
     margin: rem(12px) 0;
     font-weight: bold;
     color: $color-breadcrumb;
+}
+
+.sidebar-gallery-buttons {
+    margin-bottom: rem(30px);
+    border-bottom: 2px solid $color-hr;
+    button, a {
+        margin-bottom: rem(30px);
+    }
+}
+
+.btn-gallerty-learn-more {
+    display: block;
+    font-size: rem(16px);
+    padding: 0 0 0 rem(40px);
+    font-weight: bold;
+    background: url(../images/sprites/sprite-gallery.png) 0 -433px no-repeat;
 }
 
