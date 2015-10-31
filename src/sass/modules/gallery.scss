@@ -5,6 +5,18 @@
     float: left;
 }
 
+.sidebar-gallery-bullets {
+    margin: 0 0 rem(25px) 0;
+    padding: 0;
+    list-style: none;
+    border-bottom: 2px solid $color-hr;
+    padding-bottom: rem(10px);
+    li {
+        padding: rem(15px) 0 rem(15px) rem(30px);
+        font-size: rem(15px);
+    }
+}
+
 .gallery-stage {
     width: rem(580px);
     float: left;
@@ -68,6 +80,23 @@
     border-bottom: 2px solid $color-hr;
     padding: rem(12px) 0;
     margin: rem(28px) 0;
+    font-size: rem(15px);
+    line-height: 1.5;
 }
 
+.gallery-description__content {
+    width: rem(700px);
+    margin: 0 auto;
+}
+
+.gallery-description__hdr {
+    text-transform: uppercase;
+    margin-bottom: rem(10px);
+}
+
+.gallery-description__share-text {
+    margin: rem(12px) 0;
+    font-weight: bold;
+    color: $color-breadcrumb;
+}
 

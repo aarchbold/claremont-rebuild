@@ -91,17 +91,46 @@
 }
 
 .btn-share {
+  transition: opacity 0.125s;
   width: 1.875rem;
   height: 1.875rem;
   display: inline-block;
   margin: 0 0.3125rem;
   background-color: grey;
   text-indent: -99999px;
+  background: url(../images/sprites/sprite-social.png) 0 0 no-repeat;
+}
+.btn-share.btn-share__shareaholic {
+  background-position: 0 0;
+}
+.btn-share.btn-share__facebook {
+  background-position: 0 -31px;
+}
+.btn-share.btn-share__pinterest {
+  background-position: 0 -62px;
+}
+.btn-share.btn-share__twitter {
+  background-position: 0 -93px;
+}
+.btn-share:hover {
+  opacity: .5;
 }
 
 .sidebar-gallery-links {
   width: 12.5rem;
   float: left;
+}
+
+.sidebar-gallery-bullets {
+  margin: 0 0 1.5625rem 0;
+  padding: 0;
+  list-style: none;
+  border-bottom: 2px solid #595959;
+  padding-bottom: 0.625rem;
+}
+.sidebar-gallery-bullets li {
+  padding: 0.9375rem 0 0.9375rem 1.875rem;
+  font-size: 0.9375rem;
 }
 
 .gallery-stage {
@@ -167,6 +196,24 @@
   border-bottom: 2px solid #595959;
   padding: 0.75rem 0;
   margin: 1.75rem 0;
+  font-size: 0.9375rem;
+  line-height: 1.5;
+}
+
+.gallery-description__content {
+  width: 43.75rem;
+  margin: 0 auto;
+}
+
+.gallery-description__hdr {
+  text-transform: uppercase;
+  margin-bottom: 0.625rem;
+}
+
+.gallery-description__share-text {
+  margin: 0.75rem 0;
+  font-weight: bold;
+  color: #b3864c;
 }
 
 .gallery-container {

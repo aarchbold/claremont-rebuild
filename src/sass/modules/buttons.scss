@@ -54,10 +54,28 @@
 
 // social chicklets
 .btn-share {
+    transition: opacity 0.125s;
     width: rem(30px);
     height: rem(30px);
     display: inline-block;
     margin: 0 rem(5px);
     background-color: grey;
-    text-indent: -99999px
+    text-indent: -99999px;
+    background: url(../images/sprites/sprite-social.png) 0 0 no-repeat;
+    &.btn-share__shareaholic {
+        background-position: 0 0;
+    }
+    &.btn-share__facebook {
+        background-position: 0 -31px;
+    }
+    &.btn-share__pinterest {
+        background-position: 0 -62px;
+    }
+    &.btn-share__twitter {
+        background-position: 0 -93px;
+    }
+    &:hover {
+        opacity: .5;
+    }
 }
+
