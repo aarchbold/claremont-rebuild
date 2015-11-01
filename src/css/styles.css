@@ -449,6 +449,7 @@ h1, h2, h3, h4, p {
 #site-header {
   background: url(../images/backgrounds/bg-header.png);
   height: 8.75rem;
+  text-align: center;
 }
 
 #access {
