@@ -40,25 +40,24 @@
 }
 
 .gallery-stage {
-    width: rem(580px);
+    width: rem(756px);
     float: left;
-    margin: 0 rem(60px);
+    margin: 0 0 0 rem(144px);
 }
 
 .gallery-stage__image {
+    position: relative;
     margin-bottom: rem(15px);
+}
+
+.gallery-stage__heading {
+    text-align: center;
 }
 
 .gallery-stage__image img {
     width: 100%;
 }
 
-.gallery-details__info {
-    position: relative;
-    width: rem(580px);
-    margin: rem(10px) auto rem(20px);
-    text-align: center;
-}
 
 .gallery-details__info-description {
     font-size: rem(15px);
@@ -78,21 +77,21 @@
 .gallery-details__controls {
     position: absolute;
     background: url(../images/sprites/sprite-gallery.png) 0 0 no-repeat;
-    top: 50%;
+    top: 25%;
     transform: translateY(-50%);
     display: block;
     width: rem(24px);
     height: rem(34px);
     text-indent: -9999px;
     &.-left {
-        left: rem(-84px);
+        left: rem(-45px);
         background-position: 0 -68px;
         &:hover {
             background-position: 0 -102px;
         }
     }
     &.-right {
-        right: rem(-84px);
+        right: rem(-45px);
         background-position: 0 0;
         &:hover {
             background-position: 0 -34px;
@@ -101,8 +100,6 @@
 }
 
 .gallery-stage__detail {
-    float: left;
-    width: 50%;
     text-align: center;
     font-size: rem(16px);
     font-weight: bold;
