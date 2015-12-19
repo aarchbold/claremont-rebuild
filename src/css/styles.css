@@ -141,13 +141,12 @@
   margin: 0 0 1.5625rem 0;
   padding: 0;
   list-style: none;
-  border-bottom: 2px solid #595959;
   padding-bottom: 0.625rem;
 }
 .sidebar-gallery-bullets a {
   display: block;
   font-size: 1rem;
-  padding: 0.9375rem 0 0.9375rem 1.875rem;
+  padding: 0.75rem 0 0.75rem 1.875rem;
   font-weight: bold;
   background: url(../images/sprites/sprite-gallery.png) 0 0 no-repeat;
 }
@@ -230,9 +229,7 @@
 }
 
 .gallery-description {
-  text-align: center;
-  border-top: 2px solid #595959;
-  border-bottom: 2px solid #595959;
+  border-top: 1px solid #595959;
   padding: 0.75rem 0;
   margin: 1.75rem 0;
   font-size: 0.9375rem;
@@ -240,14 +237,23 @@
 }
 
 .gallery-description__content {
-  width: 43.75rem;
-  margin: 0 auto;
+  width: 47.25rem;
+  float: left;
+  margin: 0 0 0 9rem;
 }
 
 .gallery-description__hdr {
-  text-transform: uppercase;
-  margin-bottom: 0.625rem;
-  letter-spacing: 0.125rem;
+  font-size: 18px;
+  color: #a43929;
+}
+
+.gallery-description__details {
+  margin-bottom: 1.5625rem;
+}
+
+.gallery-description__share {
+  width: 12.5rem;
+  float: left;
 }
 
 .gallery-description__share-text {
@@ -262,6 +268,10 @@
 }
 .sidebar-gallery-buttons button, .sidebar-gallery-buttons a {
   margin-bottom: 1.875rem;
+}
+
+.sidebar-gallery__controls {
+  margin-bottom: 2.8125rem;
 }
 
 .btn-gallerty-learn-more {
@@ -540,11 +550,8 @@ h1, h2, h3, h4, p {
 }
 
 .sidebar-search__instructions {
-  margin-top: 2.1875rem;
-}
-
-.sidebar-search__controls {
-  text-align: right;
+  padding: 2.5rem 0;
+  background: url(../images/backgrounds/bg-patch.png) 24px 0 no-repeat;
 }
 
 /* Dropdown control */

@@ -119,11 +119,9 @@ h1, h2, h3, h4, p {
 }
 
 .sidebar-search__instructions {
-    margin-top: rem(35px);
+    padding: rem(40px) 0;
+    background: url(../images/backgrounds/bg-patch.png) 24px 0 no-repeat;
 }
 
-.sidebar-search__controls {
-    text-align: right;
-}
 
 

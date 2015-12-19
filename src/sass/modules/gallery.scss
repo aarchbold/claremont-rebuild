@@ -15,13 +15,12 @@
     margin: 0 0 rem(25px) 0;
     padding: 0;
     list-style: none;
-    border-bottom: 2px solid $color-hr;
     padding-bottom: rem(10px);
     li {}
     a {
         display: block;
         font-size: rem(16px);
-        padding: rem(15px) 0 rem(15px) rem(30px);
+        padding: rem(12px) 0 rem(12px) rem(30px);
         font-weight: bold;
         background: url(../images/sprites/sprite-gallery.png) 0 0 no-repeat;
         &.bullet-description {
@@ -106,9 +105,7 @@
 }
 
 .gallery-description {
-    text-align: center;
-    border-top: 2px solid $color-hr;
-    border-bottom: 2px solid $color-hr;
+    border-top: 1px solid $color-hr;
     padding: rem(12px) 0;
     margin: rem(28px) 0;
     font-size: rem(15px);
@@ -116,14 +113,23 @@
 }
 
 .gallery-description__content {
-    width: rem(700px);
-    margin: 0 auto;
+    width: rem(756px);
+    float: left;
+    margin: 0 0 0 rem(144px);
 }
 
 .gallery-description__hdr {
-    text-transform: uppercase;
-    margin-bottom: rem(10px);
-    letter-spacing: $letter-spacing-default;
+    font-size: 18px;
+    color: $breadcrumb-current;
+}
+
+.gallery-description__details {
+    margin-bottom: rem(25px);
+}
+
+.gallery-description__share {
+    width: rem(200px);
+    float: left;
 }
 
 .gallery-description__share-text {
@@ -139,6 +145,11 @@
         margin-bottom: rem(30px);
     }
 }
+
+.sidebar-gallery__controls {
+    margin-bottom: rem(45px);
+}
+
 
 .btn-gallerty-learn-more {
     display: block;
