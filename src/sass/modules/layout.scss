@@ -3,7 +3,7 @@
 // resets and existing styles
 
 body {
-    font-family: 'FuturaMedium';
+    font-family: 'Arial';
     background-color: $claremont-bg;
     font-size: rem(14px);
     margin: 0;
@@ -49,12 +49,17 @@ h1, h2, h3, h4, p {
 .main-breadcrumb {
     padding: rem(16px) 0;
     color: $color-breadcrumb;
+    font-size: rem(12px);
+    font-style: italic;
     a {
         text-decoration: none;
         color: $color-breadcrumb;
         &:hover {
             text-decoration: underline;
         }
+    }
+    span {
+        color: $color-breadcrumb;
     }
     .main-breadcrumb__current {
         color: $breadcrumb-current;
@@ -78,7 +83,7 @@ h1, h2, h3, h4, p {
     input {
         display: block;
         font-size: rem(15px);
-        width: rem(160px);
+        width: rem(190px);
         padding: rem(5px);
     }
     .sidebar-search__submit {
@@ -94,7 +99,6 @@ h1, h2, h3, h4, p {
 }
 
 .sidebar-search__hdr {
-    text-transform: uppercase;
     font-size: rem(18px);
     color: $color-heading;
     margin-bottom: rem(12px);

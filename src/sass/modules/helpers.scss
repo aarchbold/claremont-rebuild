@@ -31,12 +31,25 @@
     &:hover {
         text-decoration: underline;
     }
-    &.-underline {
+}
+
+.anchor-description {
+    color: $color-default-font;
+    &:hover {
+        color: $anchor-default;
         text-decoration: underline;
-        &:hover {
-            text-decoration: none;
-        }
     }
+}
+
+.-underline {
+    text-decoration: underline;
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.-bold {
+    font-weight: bold;
 }
 
 .gallery-push {

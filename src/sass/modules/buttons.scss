@@ -58,7 +58,7 @@
     width: rem(30px);
     height: rem(30px);
     display: inline-block;
-    margin: 0 rem(5px);
+    margin: 0 rem(1px);
     background-color: grey;
     text-indent: -99999px;
     background: url(../images/sprites/sprite-social.png) 0 0 no-repeat;
@@ -75,7 +75,7 @@
         background-position: 0 -93px;
     }
     &:hover {
-        opacity: .5;
+        opacity: .7;
     }
 }
 
