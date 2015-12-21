@@ -33,6 +33,14 @@
     }
 }
 
+.anchor-sidebar {
+    color: $color-sidebar-default;
+    text-decoration: none;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
 .anchor-description {
     color: $color-default-font;
     &:hover {

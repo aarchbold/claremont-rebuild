@@ -28,6 +28,14 @@
   text-decoration: underline;
 }
 
+.anchor-sidebar {
+  color: #5b5b5b;
+  text-decoration: none;
+}
+.anchor-sidebar:hover {
+  text-decoration: underline;
+}
+
 .anchor-description {
   color: #595959;
 }
@@ -137,6 +145,27 @@
 }
 .btn-share:hover {
   opacity: .7;
+}
+
+.btn-magnifier {
+  display: block;
+  width: 2.3125rem;
+  height: 2.3125rem;
+  background: url(../images/sprites/sprite-gallery.png) 0 -746px no-repeat;
+  text-indent: -99999px;
+}
+.btn-magnifier.-tl {
+  position: absolute;
+  top: 0.25rem;
+  left: 0.25rem;
+}
+.btn-magnifier.-br {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.25rem;
+}
+.btn-magnifier:hover {
+  opacity: .8;
 }
 
 .gallery-container {
@@ -564,6 +593,18 @@ h1, h2, h3, h4, p {
   width: 11.75rem;
   padding: 0.3125rem;
 }
+.sidebar-search__input input::-webkit-input-placeholder {
+  color: #505050;
+}
+.sidebar-search__input input::-moz-placeholder {
+  color: #505050;
+}
+.sidebar-search__input input:-ms-input-placeholder {
+  color: #505050;
+}
+.sidebar-search__input input::placeholder {
+  color: #505050;
+}
 .sidebar-search__input .sidebar-search__submit {
   display: block;
   position: absolute;
@@ -577,7 +618,7 @@ h1, h2, h3, h4, p {
 
 .sidebar-search__hdr {
   font-size: 1.125rem;
-  color: #3c656f;
+  color: #464646;
   margin-bottom: 0.75rem;
   letter-spacing: 0.0625rem;
 }

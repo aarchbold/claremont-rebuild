@@ -79,3 +79,24 @@
     }
 }
 
+.btn-magnifier {
+    display: block;
+    width: rem(37px);
+    height: rem(37px);
+    background: url(../images/sprites/sprite-gallery.png) 0 -746px no-repeat;
+    text-indent: -99999px;
+    &.-tl {
+        position: absolute;
+        top: rem(4px);
+        left: rem(4px);
+    }
+    &.-br {
+        position: absolute;
+        bottom: rem(8px);
+        right: rem(4px);
+    }
+    &:hover {
+        opacity: .8;
+    }
+}
+

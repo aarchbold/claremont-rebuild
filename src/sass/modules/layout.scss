@@ -85,6 +85,9 @@ h1, h2, h3, h4, p {
         font-size: rem(15px);
         width: rem(188px);
         padding: rem(5px);
+        &::placeholder {
+            color: $color-input-placeholder;
+        }
     }
     .sidebar-search__submit {
         display: block;
@@ -100,7 +103,7 @@ h1, h2, h3, h4, p {
 
 .sidebar-search__hdr {
     font-size: rem(18px);
-    color: $color-heading;
+    color: $color-sidebar-hdr;
     margin-bottom: rem(12px);
     letter-spacing: $letter-spacing-default;
     &.-refine {
