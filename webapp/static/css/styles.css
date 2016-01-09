@@ -718,24 +718,35 @@ h1, h2, h3, h4, p {
   color: #c1b8af;
 }
 
-.request-info-form__select {
-  width: 100%;
-  font-size: 0.75rem;
-  padding: 0.5rem;
-  border-radius: 4px;
-  height: 2.0625rem;
+select.request-info-form__select {
+  -webkit-appearance: button;
+  -webkit-border-radius: 1px;
+  -webkit-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -webkit-user-select: none;
+  background-image: url(../images/sprites/sprite-gallery.png);
+  background-position: 100% -864px;
+  background-repeat: no-repeat;
   background-color: white;
+  border: 1px solid #bfbfbf;
+  font-size: 0.75rem;
+  margin: 0;
+  overflow: hidden;
+  padding: 8px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100%;
 }
 
 .request-info-form__city {
   float: left;
-  width: 74%;
+  width: 69%;
   margin-right: 1%;
 }
 
 .request-info-form__state {
   float: left;
-  width: 25%;
+  width: 30%;
 }
 
 .request-info-form__zip {
