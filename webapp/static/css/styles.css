@@ -645,6 +645,17 @@ h1, h2, h3, h4, p {
   background: url(../images/backgrounds/bg-patch.png) 24px 0 no-repeat;
 }
 
+.gallery-stage-info-page {
+  width: 47.25rem;
+  float: left;
+  margin: 0 0 0 2.75rem;
+}
+
+.sidebar-info-page {
+  width: 18.75rem;
+  float: left;
+}
+
 /* Dropdown control */
 .selectBox-dropdown {
   min-width: 150px;
