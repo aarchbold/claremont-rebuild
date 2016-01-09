@@ -1,4 +1,4 @@
 $(document).ready(function() {
     $('.tooltip').tooltipster();
-    $('select').selectBox();
+    $('.select-replace').selectBox();
 });
